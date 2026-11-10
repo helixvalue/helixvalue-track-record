@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HelixValue | Equity Research — Open Paper Calls</title>
+<style>
+  :root {
+    --bg: #0B0F17;
+    --surface: #161B22;
+    --border: #30363D;
+    --text: #FFFFFF;
+    --label: #E6EDF3;
+    --subtext: #8B949E;
+    --footer: #6E7681;
+    --green: #3FB950;
+    --red: #F85149;
+    --gold: #D29922;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--label);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 32px 20px 48px; }
+  h1 { color: var(--text); font-size: 26px; margin: 0 0 4px; }
+  .subtitle { color: var(--subtext); font-size: 16px; margin: 0 0 8px; }
+  .disclaimer { color: var(--subtext); font-size: 13.5px; margin: 0 0 24px; }
+  .table-scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: 8px; }
+  table { width: 100%; border-collapse: collapse; background: var(--surface); min-width: 860px; }
+  th, td { padding: 10px 12px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--border); }
+  th { color: var(--text); font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; background: #1C2128; white-space: nowrap; }
+  tr:last-child td { border-bottom: none; }
+  td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td.ticker { font-weight: 700; color: var(--text); white-space: nowrap; }
+  .call-buy { color: var(--green); font-weight: 700; }
+  .call-hold { color: var(--gold); font-weight: 700; }
+  .status-open { color: var(--green); }
+  .status-broken { color: var(--red); }
+  .status-awaiting { color: var(--subtext); }
+  td.notes { color: var(--subtext); font-size: 13.5px; }
+  .method { color: var(--footer); font-size: 13px; margin: 20px 0 0; }
+  .updated { color: var(--footer); font-size: 13px; margin: 8px 0 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>HelixValue | Equity Research</h1>
+  <p class="subtitle">Open Paper Calls, powered by the Helix Valuation Protocol.</p>
+  <p class="disclaimer">Source: Helix Valuation Protocol track record. As of Nov 9, 2026. 0 resolved calls — no win rate is shown. Closed calls are never edited or deleted.</p>
+
+  <div class="table-scroll">
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Ticker</th>
+        <th>Call</th>
+        <th>Implied Base</th>
+        <th>Entry</th>
+        <th>Invalidation</th>
+        <th>Status</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="num">2026-11-09</td><td class="ticker">NVDA</td><td class="call-hold">HOLD</td><td class="num">178.42</td><td>Entries 174.73 / 170.24 / 161.05 (awaiting fill)</td><td>Close below 152.66</td><td class="status-awaiting">Awaiting entry</td><td class="notes">Replaces Nov 3 HOLD call ($208.17), broken on Nov 5 confirmed close $181.60 — $9.52 below the $191.12 invalidation; fresh report fired DSO spike, inventory-days spike, accruals divergence, and Beneish M-Score flag forensic triggers.</td>
+      </tr>
+      <tr>
+        <td class="num">2026-11-06</td><td class="ticker">NET</td><td class="call-hold">HOLD</td><td class="num">273.93</td><td>Entries 272.56 / 247.91 / 224.70 (awaiting fill)</td><td>Close below 203.42</td><td class="status-awaiting">Awaiting entry</td><td class="notes">Fresh report fired gross-margin deterioration trigger (75.2% to 71.9%).</td>
+      </tr>
+      <tr>
+        <td class="num">2026-11-06</td><td class="ticker">ABNB</td><td class="call-buy">BUY</td><td class="num">185.57</td><td>Entries 182.65 / 179.83 / 160.77 (awaiting fill)</td><td>Close below 153.96</td><td class="status-awaiting">Awaiting entry</td><td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="num">2026-11-06</td><td class="ticker">AVGO</td><td class="call-hold">HOLD</td><td class="num">291.53</td><td>Entries 290.07 / 275.04 / 196.23 (awaiting fill)</td><td>Close below 182.02</td><td class="status-awaiting">Awaiting entry</td><td class="notes">Fresh report fired DSO spike and inventory-days spike forensic triggers.</td>
+      </tr>
+      <tr>
+        <td class="num">2026-11-06</td><td class="ticker">MRVL</td><td class="call-hold">HOLD</td><td class="num">133.55</td><td>Entries 132.54 / 112.25 / 73.62 (awaiting fill)</td><td>Close below 55.19</td><td class="status-awaiting">Awaiting entry</td><td class="notes">Fresh report fired DSO spike and inventory-days spike forensic triggers.</td>
+      </tr>
+      <tr>
+        <td class="num">2026-11-06</td><td class="ticker">MU</td><td class="call-buy">BUY</td><td class="num">656.39</td><td>Entries 650.00 / 593.58 / 311.49 (awaiting fill)</td><td>Close below 253.48</td><td class="status-awaiting">Awaiting entry</td><td class="notes">Fresh report fired DSO spike, inventory-days spike, and Beneish M-Score flag (-0.06) forensic triggers.</td>
+      </tr>
+      <tr>
+        <td class="num">2026-11-06</td><td class="ticker">AMD</td><td class="call-hold">HOLD</td><td class="num">404.40</td><td>Entries 402.10 / 364.27 / 194.28 (awaiting fill)</td><td>Close below 159.12</td><td class="status-awaiting">Awaiting entry</td><td class="notes">Fresh report fired inventory-days spike forensic trigger.</td>
+      </tr>
+      <tr>
+        <td class="num">2026-11-04</td><td class="ticker">GOOGL</td><td class="call-hold">HOLD</td><td class="num">294.25</td><td>Entries 289.68 / 277.62 / 271.66 (awaiting fill)</td><td>Close below 261.35</td><td class="status-awaiting">Awaiting entry</td><td class="notes">Replaces Nov 3 BUY call ($278.66); fresh report fired inventory-days spike forensic trigger.</td>
+      </tr>
+      <tr>
+        <td class="num">2026-11-03</td><td class="ticker">PLTR</td><td class="call-buy">BUY</td><td class="num">170.02</td><td>Entries 166.26 / 159.66 / 152.21 (awaiting fill)</td><td>Close below 143.51</td><td class="status-awaiting">Awaiting entry</td><td class="notes">Replaces Nov 2 call (invalidation $159.00); ladder rebuilt on fresh report.</td>
+      </tr>
+      <tr>
+        <td class="num">2026-11-02</td><td class="ticker">AAPL</td><td class="call-hold">HOLD</td><td class="num">339.87</td><td>Entries 336.74 / 335.73 / 312.74 (awaiting fill)</td><td>Close below 305.99</td><td class="status-awaiting">Awaiting entry</td><td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="num">2026-10-29</td><td class="ticker">AMZN</td><td class="call-hold">HOLD</td><td class="num">243.79</td><td>Entries 242.57 / 238.74 / 225.86 (awaiting fill)</td><td>Close below 219.16</td><td class="status-awaiting">Awaiting entry</td><td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="num">2026-10-27</td><td class="ticker">PBR</td><td class="call-hold">HOLD</td><td class="num">22.30</td><td>Filled 22.12 on Oct 28 (hourly VWAP approx)</td><td>Close below 19.88</td><td class="status-broken">Broken — case study only</td><td class="notes">Report 22 — origin unknown, flagged. Broke on confirmed close $18.80 on Nov 5, 2026 — $1.08 below the $19.88 invalidation.</td>
+      </tr>
+      <tr>
+        <td class="num">2026-10-26</td><td class="ticker">VFV.TO</td><td class="call-hold">HOLD</td><td class="num">190.73</td><td>Filled 192.12 on Oct 27 (hourly VWAP approx)</td><td>Close below 185.44</td><td class="status-broken">Broken — case study only</td><td class="notes">Placeholder report — broke on confirmed close $182.71 on Nov 5, 2026, $2.73 below the $185.44 invalidation.</td>
+      </tr>
+      <tr>
+        <td class="num">2026-10-26</td><td class="ticker">XEQT.TO</td><td class="call-hold">HOLD</td><td class="num">45.07</td><td>Filled 45.34 on Oct 27 (hourly VWAP approx)</td><td>Close below 43.88</td><td class="status-open">Open</td><td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="num">2026-10-24</td><td class="ticker">SPCX</td><td class="call-hold">HOLD</td><td class="num">147.49</td><td>Filled 148.13 on Oct 26 (hourly VWAP approx)</td><td>Close below 121.38</td><td class="status-open">Open</td><td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="num">2026-10-24</td><td class="ticker">BB</td><td class="call-hold">HOLD</td><td class="num">8.92</td><td>Filled 9.17 on Oct 26 (hourly VWAP approx)</td><td>Close below 7.10</td><td class="status-open">Open</td><td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="num">2026-10-23</td><td class="ticker">TSLA</td><td class="call-hold">HOLD</td><td class="num">372.22</td><td>Filled 393.39 on Oct 26 (hourly VWAP approx)</td><td>Close below 313.95</td><td class="status-open">Open</td><td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="num">2026-10-23</td><td class="ticker">MSFT</td><td class="call-hold">HOLD</td><td class="num">523.93</td><td>Filled 529.67 on Oct 26 (hourly VWAP approx)</td><td>Close below 483.75</td><td class="status-open">Open</td><td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="num">2026-10-23</td><td class="ticker">BB.TO</td><td class="call-hold">HOLD</td><td class="num">12.38</td><td>Filled 12.91 on Oct 26 (hourly VWAP approx)</td><td>Close below 9.72</td><td class="status-open">Open</td><td class="notes"></td>
+      </tr>
+      <tr>
+        <td class="num">2026-10-23</td><td class="ticker">QQC.TO</td><td class="call-hold">HOLD</td><td class="num">48.31</td><td>Filled 48.87 on Oct 26 (hourly VWAP approx)</td><td>Close below 46.38</td><td class="status-broken">Broken — case study only</td><td class="notes">Placeholder report — broke on confirmed close $44.34 on Nov 5, 2026, $2.04 below the $46.38 invalidation.</td>
+      </tr>
+      <tr>
+        <td class="num">2026-10-23</td><td class="ticker">XEQT</td><td class="call-hold">HOLD</td><td class="num">44.88</td><td>Filled 45.13 on Oct 26 (daily typical price fallback)</td><td>Close below 44.00</td><td class="status-broken">Broken — case study only</td><td class="notes">Placeholder report — broke on confirmed close $43.95 on Nov 5, 2026, $0.05 below the $44.00 invalidation.</td>
+      </tr>
+      <tr>
+        <td class="num">2026-10-23</td><td class="ticker">CASH.TO</td><td class="call-hold">HOLD</td><td class="num">50.08</td><td>Filled 50.08 on Oct 26 (hourly VWAP approx)</td><td>None recorded</td><td class="status-open">Open</td><td class="notes">Shadow row for Boss's real holding, not a call.</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p class="method">Method: entries are the first session after the call at that session's hourly-bar VWAP approximation (daily typical price fallback where noted). Buys close at top target, stop, invalidation close, or 90-day horizon; Holds run the full 90 days. Benchmark: SPY over the identical window (not shown here).</p>
+  <p class="updated">Last updated: Nov 9, 2026.</p>
+</div>
+</body>
+</html>
