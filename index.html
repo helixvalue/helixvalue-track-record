@@ -52,13 +52,18 @@
   td.disclosure-held { color: var(--gold); font-size: 13.5px; font-weight: 700; white-space: nowrap; }
   .method { color: var(--footer); font-size: 13px; margin: 20px 0 0; }
   .updated { color: var(--footer); font-size: 13px; margin: 8px 0 0; }
+  .history h2 { color: var(--text); font-size: 20px; margin: 28px 0 4px; }
+  .history .hist-note { color: var(--subtext); font-size: 13.5px; margin: 0 0 12px; }
+  .history h3 { color: var(--text); font-size: 15px; margin: 18px 0 6px; }
+  .history table { min-width: 640px; }
+  .history td.reason { color: var(--subtext); font-size: 13.5px; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>HelixValue | Equity Research</h1>
   <p class="subtitle">Open Paper Calls, powered by the Helix Valuation Protocol.</p>
-  <p class="disclaimer">Source: Helix Valuation Protocol track record. As of Nov 22, 2026. 0 resolved calls — no win rate is shown. Closed calls are never edited or deleted.</p>
+  <p class="disclaimer">Source: Helix Valuation Protocol track record. As of Nov 23, 2026. 0 resolved calls — no win rate is shown. Closed calls are never edited or deleted.</p>
   <p class="notice"><strong>Hypothetical results:</strong> these are paper (simulated) model screens from the Helix Valuation Protocol — theoretical price levels tracked from public posts, not live audited brokerage returns. No slippage, commissions, or taxes are included. Past performance (actual or simulated) does not guarantee future results.</p>
   <p class="notice">For informational &amp; educational purposes only. Not financial advice or a personal recommendation.</p>
 
@@ -78,6 +83,12 @@
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td class="num">2026-11-23</td><td class="ticker">XEQT.TO</td><td class="call-hold">HOLD</td><td class="num">43.63</td><td>Entries 43.41 / 43.28 / 40.92 (awaiting fill)</td><td>Close below 40.07</td><td class="status-awaiting">Awaiting entry</td><td class="disclosure">—</td><td class="notes">Replaces Oct 26 HOLD call ($45.07); prior call broke on confirmed close $43.28 on Nov 19, 2026 — $0.60 below the $43.88 invalidation.</td>
+      </tr>
+      <tr>
+        <td class="num">2026-11-23</td><td class="ticker">NVDA</td><td class="call-buy">BUY</td><td class="num">125.53</td><td>Entries 124.50 / 113.56 / 86.62 (awaiting fill)</td><td>Close below 75.91</td><td class="status-awaiting">Awaiting entry</td><td class="disclosure-held">Disclosure: Long $NVDA.</td><td class="notes">Replaces Nov 19 HOLD call ($150.96); fresh report fired DSO spike (61.4 to 76.0 days, +23.7%), inventory-days spike (109.6 to 150.2 days, +37.0%), accruals divergence (18.3% of assets), and Beneish M-Score flag (Infinity) forensic triggers.</td>
+      </tr>
       <tr>
         <td class="num">2026-11-22</td><td class="ticker">MU</td><td class="call-buy">BUY</td><td class="num">594.51</td><td>Entries 585.25 / 527.11 / 311.49 (awaiting fill)</td><td>Close below 249.65</td><td class="status-awaiting">Awaiting entry</td><td class="disclosure">—</td><td class="notes">Replaces Nov 16 BUY call ($778.31); prior call broke on confirmed close $594.51 on Nov 20, 2026 — $12.95 below the $607.46 invalidation. Fresh report fired DSO spike (70.0 to 87.1 days, +24.6%), inventory-days spike (135.5 to 147.4 days, +8.8%), and Beneish M-Score flag (-0.06) forensic triggers.</td>
       </tr>
@@ -127,9 +138,6 @@
         <td class="num">2026-11-19</td><td class="ticker">RY.TO</td><td class="call-hold">HOLD</td><td class="num">269.45</td><td>Entries 268.10 / 267.34 / 258.17 (awaiting fill)</td><td>Close below 247.89</td><td class="status-awaiting">Awaiting entry</td><td class="disclosure">—</td><td class="notes"></td>
       </tr>
       <tr>
-        <td class="num">2026-11-19</td><td class="ticker">NVDA</td><td class="call-hold">HOLD</td><td class="num">150.96</td><td>Entries 148.80 / 140.01 / 86.62 (awaiting fill)</td><td>Close below 76.94</td><td class="status-awaiting">Awaiting entry</td><td class="disclosure-held">Disclosure: Long $NVDA.</td><td class="notes">Replaces Nov 18 BUY call ($155.46); fresh report fired DSO spike (61.4 to 76.0 days, +23.7%), inventory-days spike (109.6 to 150.2 days, +37.0%), accruals divergence (18.3% of assets), and Beneish M-Score flag (Infinity) forensic triggers.</td>
-      </tr>
-      <tr>
         <td class="num">2026-11-13</td><td class="ticker">CSCO</td><td class="call-hold">HOLD</td><td class="num">102.01</td><td>Entries 100.33 / 99.49 / 94.56 (awaiting fill)</td><td>Close below 90.91</td><td class="status-broken">Broken — case study only</td><td class="disclosure">—</td><td class="notes">Replaces Nov 11 HOLD call ($98.15); fresh report fired inventory-days spike forensic trigger (58.1 to 92.5 days, +59.1%). Broke on confirmed close $90.64 on Nov 20, 2026 — $0.27 below the $90.91 invalidation.</td>
       </tr>
       <tr>
@@ -163,9 +171,6 @@
         <td class="num">2026-10-26</td><td class="ticker">VFV.TO</td><td class="call-hold">HOLD</td><td class="num">190.73</td><td>Filled 192.12 on Oct 27 (hourly VWAP approx)</td><td>Close below 185.44</td><td class="status-broken">Broken — case study only</td><td class="disclosure">—</td><td class="notes">Placeholder report — broke on confirmed close $182.71 on Nov 5, 2026, $2.73 below the $185.44 invalidation.</td>
       </tr>
       <tr>
-        <td class="num">2026-10-26</td><td class="ticker">XEQT.TO</td><td class="call-hold">HOLD</td><td class="num">45.07</td><td>Filled 45.34 on Oct 27 (hourly VWAP approx)</td><td>Close below 43.88</td><td class="status-broken">Broken — case study only</td><td class="disclosure">—</td><td class="notes">Broke on confirmed close $43.28 on Nov 19, 2026, $0.60 below the $43.88 invalidation.</td>
-      </tr>
-      <tr>
         <td class="num">2026-10-24</td><td class="ticker">SPCX</td><td class="call-hold">HOLD</td><td class="num">147.49</td><td>Filled 148.13 on Oct 26 (hourly VWAP approx)</td><td>Close below 121.38</td><td class="status-open">Open</td><td class="disclosure">—</td><td class="notes"></td>
       </tr>
       <tr>
@@ -193,8 +198,494 @@
   </table>
   </div>
 
+<!-- rating-history-start -->
+  <section class="history">
+    <h2>Rating history</h2>
+    <p class="hist-note">Every call the protocol has made, per ticker — including calls the latest table replaced. The composite scores each report 0–10; 6.5 and above is a BUY, below it is a HOLD. A rating changes only when the composite crosses the 6.5 line.</p>
+    <h3>AAPL</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-10-23</td><td class="call-hold">HOLD</td><td class="num">$346.18</td><td class="num">6.00</td><td class="reason">—</td>
+        </tr>
+        <tr>
+          <td class="num">2026-10-29</td><td class="call-hold">HOLD</td><td class="num">$348.90</td><td class="num">5.69</td><td class="reason">—</td>
+        </tr>
+        <tr>
+          <td class="num">2026-11-02</td><td class="call-hold">HOLD</td><td class="num">$339.87</td><td class="num">5.90</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>ABNB</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-11-06</td><td class="call-buy">BUY</td><td class="num">$185.56</td><td class="num">6.80</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>ABX.TO</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-11-20</td><td class="call-hold">HOLD</td><td class="num">$47.91</td><td class="num">4.73</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>AEM.TO</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-11-20</td><td class="call-hold">HOLD</td><td class="num">$227.17</td><td class="num">4.79</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>AMD</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-11-06</td><td class="call-hold">HOLD</td><td class="num">$404.40</td><td class="num">6.36</td><td class="reason">—</td>
+        </tr>
+        <tr>
+          <td class="num">2026-11-15</td><td class="call-hold">HOLD</td><td class="num">$534.06</td><td class="num">6.40</td><td class="reason">—</td>
+        </tr>
+        <tr>
+          <td class="num">2026-11-20</td><td class="call-hold">HOLD</td><td class="num">$489.19</td><td class="num">6.13</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>AMZN</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-10-29</td><td class="call-hold">HOLD</td><td class="num">$243.79</td><td class="num">6.06</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>AVGO</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-11-06</td><td class="call-hold">HOLD</td><td class="num">$291.53</td><td class="num">6.12</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>BAM.TO</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-11-20</td><td class="call-hold">HOLD</td><td class="num">$72.06</td><td class="num">5.75</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>BB</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-10-23</td><td class="call-hold">HOLD</td><td class="num">$8.87</td><td class="num">5.66</td><td class="reason">—</td>
+        </tr>
+        <tr>
+          <td class="num">2026-10-24</td><td class="call-hold">HOLD</td><td class="num">$8.92</td><td class="num">5.53</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>BB.TO</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-10-23</td><td class="call-hold">HOLD</td><td class="num">$12.38</td><td class="num">5.05</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>BMO.TO</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-11-20</td><td class="call-hold">HOLD</td><td class="num">$231.06</td><td class="num">5.15</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>BN.TO</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-11-20</td><td class="call-hold">HOLD</td><td class="num">$55.93</td><td class="num">5.20</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>BNS.TO</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-11-20</td><td class="call-hold">HOLD</td><td class="num">$123.44</td><td class="num">5.29</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>CASH.TO</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-10-23</td><td class="call-hold">HOLD</td><td class="num">$50.08</td><td class="num">5.27</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>CM.TO</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-11-20</td><td class="call-hold">HOLD</td><td class="num">$152.29</td><td class="num">4.90</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>CNQ.TO</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-11-20</td><td class="call-hold">HOLD</td><td class="num">$64.10</td><td class="num">5.22</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>CNR.TO</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-11-20</td><td class="call-hold">HOLD</td><td class="num">$178.66</td><td class="num">5.33</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>CP.TO</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-11-20</td><td class="call-hold">HOLD</td><td class="num">$131.11</td><td class="num">5.60</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>CSCO</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-11-11</td><td class="call-hold">HOLD</td><td class="num">$98.15</td><td class="num">6.22</td><td class="reason">—</td>
+        </tr>
+        <tr>
+          <td class="num">2026-11-13</td><td class="call-hold">HOLD</td><td class="num">$102.01</td><td class="num">6.00</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>ENB.TO</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-11-20</td><td class="call-hold">HOLD</td><td class="num">$65.99</td><td class="num">4.73</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>GOOGL</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-10-28</td><td class="call-buy">BUY</td><td class="num">$324.89</td><td class="num">6.78</td><td class="reason">—</td>
+        </tr>
+        <tr>
+          <td class="num">2026-11-03</td><td class="call-buy">BUY</td><td class="num">$278.66</td><td class="num">6.77</td><td class="reason">—</td>
+        </tr>
+        <tr>
+          <td class="num">2026-11-04</td><td class="call-hold">HOLD</td><td class="num">$294.25</td><td class="num">6.43</td><td class="reason">Composite slipped under the 6.5 line (6.77 → 6.43).</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>MRVL</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-11-06</td><td class="call-hold">HOLD</td><td class="num">$133.55</td><td class="num">6.18</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>MSFT</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-10-23</td><td class="call-hold">HOLD</td><td class="num">$523.93</td><td class="num">6.48</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>MU</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-11-06</td><td class="call-buy">BUY</td><td class="num">$656.39</td><td class="num">7.09</td><td class="reason">—</td>
+        </tr>
+        <tr>
+          <td class="num">2026-11-16</td><td class="call-buy">BUY</td><td class="num">$778.31</td><td class="num">6.93</td><td class="reason">—</td>
+        </tr>
+        <tr>
+          <td class="num">2026-11-22</td><td class="call-buy">BUY</td><td class="num">$594.51</td><td class="num">7.00</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>NET</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-11-06</td><td class="call-hold">HOLD</td><td class="num">$273.93</td><td class="num">5.34</td><td class="reason">—</td>
+        </tr>
+        <tr>
+          <td class="num">2026-11-11</td><td class="call-hold">HOLD</td><td class="num">$305.80</td><td class="num">5.50</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>NVDA</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-10-23</td><td class="call-hold">HOLD</td><td class="num">$210.96</td><td class="num">6.35</td><td class="reason">—</td>
+        </tr>
+        <tr>
+          <td class="num">2026-11-03</td><td class="call-hold">HOLD</td><td class="num">$208.17</td><td class="num">6.41</td><td class="reason">—</td>
+        </tr>
+        <tr>
+          <td class="num">2026-11-09</td><td class="call-hold">HOLD</td><td class="num">$178.42</td><td class="num">6.49</td><td class="reason">—</td>
+        </tr>
+        <tr>
+          <td class="num">2026-11-12</td><td class="call-hold">HOLD</td><td class="num">$173.73</td><td class="num">6.36</td><td class="reason">—</td>
+        </tr>
+        <tr>
+          <td class="num">2026-11-17</td><td class="call-hold">HOLD</td><td class="num">$156.14</td><td class="num">6.45</td><td class="reason">—</td>
+        </tr>
+        <tr>
+          <td class="num">2026-11-18</td><td class="call-buy">BUY</td><td class="num">$155.46</td><td class="num">6.69</td><td class="reason">Composite crossed above the 6.5 line (6.45 → 6.69).</td>
+        </tr>
+        <tr>
+          <td class="num">2026-11-19</td><td class="call-hold">HOLD</td><td class="num">$150.96</td><td class="num">6.49</td><td class="reason">Composite slipped under the 6.5 line (6.69 → 6.49).</td>
+        </tr>
+        <tr>
+          <td class="num">2026-11-23</td><td class="call-buy">BUY</td><td class="num">$125.53</td><td class="num">6.65</td><td class="reason">Composite crossed above the 6.5 line (6.49 → 6.65).</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>PBR</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-10-27</td><td class="call-hold">HOLD</td><td class="num">$22.30</td><td class="num">6.15</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>PLTR</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-10-31</td><td class="call-hold">HOLD</td><td class="num">$184.11</td><td class="num">6.46</td><td class="reason">—</td>
+        </tr>
+        <tr>
+          <td class="num">2026-11-02</td><td class="call-buy">BUY</td><td class="num">$184.11</td><td class="num">6.82</td><td class="reason">Composite crossed above the 6.5 line (6.46 → 6.82).</td>
+        </tr>
+        <tr>
+          <td class="num">2026-11-03</td><td class="call-buy">BUY</td><td class="num">$170.02</td><td class="num">6.69</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>QQC.TO</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-10-23</td><td class="call-hold">HOLD</td><td class="num">$48.31</td><td class="num">5.48</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>RY.TO</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-11-20</td><td class="call-hold">HOLD</td><td class="num">$269.45</td><td class="num">5.26</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>SHOP.TO</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-11-20</td><td class="call-hold">HOLD</td><td class="num">$189.35</td><td class="num">5.28</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>SPCX</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-10-23</td><td class="call-hold">HOLD</td><td class="num">$147.59</td><td class="num">5.09</td><td class="reason">—</td>
+        </tr>
+        <tr>
+          <td class="num">2026-10-24</td><td class="call-hold">HOLD</td><td class="num">$147.49</td><td class="num">5.21</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>TD.TO</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-11-20</td><td class="call-hold">HOLD</td><td class="num">$165.27</td><td class="num">5.45</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>TSLA</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-10-23</td><td class="call-hold">HOLD</td><td class="num">$372.22</td><td class="num">4.57</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>VFV.TO</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-10-23</td><td class="call-hold">HOLD</td><td class="num">$189.52</td><td class="num">5.25</td><td class="reason">—</td>
+        </tr>
+        <tr>
+          <td class="num">2026-10-26</td><td class="call-hold">HOLD</td><td class="num">$190.73</td><td class="num">5.05</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>XEQT</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-10-23</td><td class="call-hold">HOLD</td><td class="num">$44.88</td><td class="num">4.70</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>XEQT.TO</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Rating</th><th>Price</th><th>Composite</th><th>Why it changed</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num">2026-10-23</td><td class="call-hold">HOLD</td><td class="num">$44.86</td><td class="num">5.23</td><td class="reason">—</td>
+        </tr>
+        <tr>
+          <td class="num">2026-10-26</td><td class="call-hold">HOLD</td><td class="num">$45.07</td><td class="num">5.05</td><td class="reason">—</td>
+        </tr>
+        <tr>
+          <td class="num">2026-11-23</td><td class="call-hold">HOLD</td><td class="num">$43.63</td><td class="num">4.90</td><td class="reason">—</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+<!-- rating-history-end -->
+
   <p class="method">Method: entries are the first session after the call at that session's hourly-bar VWAP approximation (daily typical price fallback where noted). Buys close at top target, stop, invalidation close, or 90-day horizon; Holds run the full 90 days. Benchmark: SPY over the identical window (not shown here).</p>
-  <p class="updated">Last updated: Nov 22, 2026.</p>
+  <p class="updated">Last updated: Nov 23, 2026.</p>
 </div>
 </body>
 </html>
